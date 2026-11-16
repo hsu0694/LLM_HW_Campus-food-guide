@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>校園食光機 — 大台北學生高 CP 值美食圖鑑</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand-icon">🍱</span>
+        <div>
+          <h1>校園食光機</h1>
+          <p class="subtitle">大台北學生高 CP 值美食圖鑑</p>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="filter-bar" aria-label="美食分類篩選">
+      <button class="filter-btn active" data-category="全部">全部</button>
+      <button class="filter-btn" data-category="正餐">正餐</button>
+      <button class="filter-btn" data-category="咖啡廳">咖啡廳</button>
+      <button class="filter-btn" data-category="宵夜">宵夜</button>
+      <button class="filter-btn" data-category="甜點飲料">甜點飲料</button>
+    </section>
+
+    <section id="shop-grid" class="card-grid" aria-live="polite">
+      <!-- 由 assets/app.js 動態渲染店家卡片 -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 校園食光機 Campus Food Time Machine · Powered by AGENTS.md Architecture</p>
+    </div>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
